@@ -12,7 +12,7 @@ const Search = ({ setShowSearch }) => {
   };
 
   let { data } = useFetch(
-    `/api/products?populate=*&filters[title][$contains]=${query}`
+    `/api/products?populate=*&filters[title][$containsi]=${query}`
   );
 
   if (!query.length) {
